@@ -2,6 +2,10 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: ${{ values.name | dump }}
+  region: ${{ values.region | dump }}
+  stage: ${{ values.stage | dump }}
+  orgUnit: ${{ values.orgUnit | dump }}
+  costCenter: ${{ values.costCenter | dump }}
 spec:
   type: service
   owner: user:guest
